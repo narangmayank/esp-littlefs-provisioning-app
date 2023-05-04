@@ -1,0 +1,120 @@
+Executing action: all (aliases: build)
+Running cmake in directory c:\users\mayan\testing\littlefs_provisioning_example\build
+Executing "cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DESP_PLATFORM=1 -DIDF_TARGET=esp32 -DCCACHE_ENABLE=1 c:\users\mayan\testing\littlefs_provisioning_example"...
+-- Found Git: C:/Espressif_4.4.3/Espressif/tools/idf-git/2.34.2/cmd/git.exe (found version "2.34.1.windows.1")
+-- ccache will be used for faster recompilation
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Project is not inside a git repository, or git repository has no commits; will not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+Processing 2 dependencies:
+[1/2] idf (5.0.0)
+[2/2] joltwallet/littlefs (1.5.4)
+-- Project sdkconfig file C:/Users/mayan/testing/littlefs_provisioning_example/sdkconfig
+Loading defaults file C:/Users/mayan/testing/littlefs_provisioning_example/sdkconfig.defaults...
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: C:/Espressif/python_env/idf5.0_py3.8_env/Scripts/python.exe (found version "3.8.7") found components: Interpreter
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "bytebeam_provisioning_example" version: 1
+-- Adding linker script C:/Users/mayan/testing/littlefs_provisioning_example/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 joltwallet__littlefs json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Espressif/frameworks/esp-idf-v5.0/components/app_trace C:/Espressif/frameworks/esp-idf-v5.0/components/app_update C:/Espressif/frameworks/esp-idf-v5.0/components/bootloader C:/Espressif/frameworks/esp-idf-v5.0/components/bootloader_support C:/Espressif/frameworks/esp-idf-v5.0/components/bt C:/Espressif/frameworks/esp-idf-v5.0/components/cmock C:/Espressif/frameworks/esp-idf-v5.0/components/console C:/Espressif/frameworks/esp-idf-v5.0/components/cxx C:/Espressif/frameworks/esp-idf-v5.0/components/driver C:/Espressif/frameworks/esp-idf-v5.0/components/efuse C:/Espressif/frameworks/esp-idf-v5.0/components/esp-tls C:/Espressif/frameworks/esp-idf-v5.0/components/esp_adc C:/Espressif/frameworks/esp-idf-v5.0/components/esp_app_format C:/Espressif/frameworks/esp-idf-v5.0/components/esp_common C:/Espressif/frameworks/esp-idf-v5.0/components/esp_eth C:/Espressif/frameworks/esp-idf-v5.0/components/esp_event C:/Espressif/frameworks/esp-idf-v5.0/components/esp_gdbstub C:/Espressif/frameworks/esp-idf-v5.0/components/esp_hid C:/Espressif/frameworks/esp-idf-v5.0/components/esp_http_client C:/Espressif/frameworks/esp-idf-v5.0/components/esp_http_server C:/Espressif/frameworks/esp-idf-v5.0/components/esp_https_ota C:/Espressif/frameworks/esp-idf-v5.0/components/esp_https_server C:/Espressif/frameworks/esp-idf-v5.0/components/esp_hw_support C:/Espressif/frameworks/esp-idf-v5.0/components/esp_lcd C:/Espressif/frameworks/esp-idf-v5.0/components/esp_local_ctrl C:/Espressif/frameworks/esp-idf-v5.0/components/esp_netif C:/Espressif/frameworks/esp-idf-v5.0/components/esp_partition C:/Espressif/frameworks/esp-idf-v5.0/components/esp_phy C:/Espressif/frameworks/esp-idf-v5.0/components/esp_pm C:/Espressif/frameworks/esp-idf-v5.0/components/esp_psram C:/Espressif/frameworks/esp-idf-v5.0/components/esp_ringbuf C:/Espressif/frameworks/esp-idf-v5.0/components/esp_rom C:/Espressif/frameworks/esp-idf-v5.0/components/esp_system C:/Espressif/frameworks/esp-idf-v5.0/components/esp_timer C:/Espressif/frameworks/esp-idf-v5.0/components/esp_wifi C:/Espressif/frameworks/esp-idf-v5.0/components/espcoredump C:/Espressif/frameworks/esp-idf-v5.0/components/esptool_py C:/Espressif/frameworks/esp-idf-v5.0/components/fatfs C:/Espressif/frameworks/esp-idf-v5.0/components/freertos C:/Espressif/frameworks/esp-idf-v5.0/components/hal C:/Espressif/frameworks/esp-idf-v5.0/components/heap C:/Espressif/frameworks/esp-idf-v5.0/components/http_parser C:/Espressif/frameworks/esp-idf-v5.0/components/idf_test C:/Espressif/frameworks/esp-idf-v5.0/components/ieee802154 C:/Users/mayan/testing/littlefs_provisioning_example/managed_components/joltwallet__littlefs C:/Espressif/frameworks/esp-idf-v5.0/components/json C:/Espressif/frameworks/esp-idf-v5.0/components/log C:/Espressif/frameworks/esp-idf-v5.0/components/lwip C:/Users/mayan/testing/littlefs_provisioning_example/main C:/Espressif/frameworks/esp-idf-v5.0/components/mbedtls C:/Espressif/frameworks/esp-idf-v5.0/components/mqtt C:/Espressif/frameworks/esp-idf-v5.0/components/newlib C:/Espressif/frameworks/esp-idf-v5.0/components/nvs_flash C:/Espressif/frameworks/esp-idf-v5.0/components/openthread C:/Espressif/frameworks/esp-idf-v5.0/components/partition_table C:/Espressif/frameworks/esp-idf-v5.0/components/perfmon C:/Espressif/frameworks/esp-idf-v5.0/components/protobuf-c C:/Espressif/frameworks/esp-idf-v5.0/components/protocomm C:/Espressif/frameworks/esp-idf-v5.0/components/pthread C:/Espressif/frameworks/esp-idf-v5.0/components/sdmmc C:/Espressif/frameworks/esp-idf-v5.0/components/soc C:/Espressif/frameworks/esp-idf-v5.0/components/spi_flash C:/Espressif/frameworks/esp-idf-v5.0/components/spiffs C:/Espressif/frameworks/esp-idf-v5.0/components/tcp_transport C:/Espressif/frameworks/esp-idf-v5.0/components/ulp C:/Espressif/frameworks/esp-idf-v5.0/components/unity C:/Espressif/frameworks/esp-idf-v5.0/components/usb C:/Espressif/frameworks/esp-idf-v5.0/components/vfs C:/Espressif/frameworks/esp-idf-v5.0/components/wear_levelling C:/Espressif/frameworks/esp-idf-v5.0/components/wifi_provisioning C:/Espressif/frameworks/esp-idf-v5.0/components/wpa_supplicant C:/Espressif/frameworks/esp-idf-v5.0/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/mayan/testing/littlefs_provisioning_example/build
+Running ninja in directory c:\users\mayan\testing\littlefs_provisioning_example\build
+Executing "ninja all"...
+[67/849] Generating ../../partition_table/partition-table.binPartition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,16K,
+otadata,data,ota,0xd000,8K,
+phy_init,data,phy,0xf000,4K,
+factory,app,factory,0x10000,1M,
+ota_0,app,ota_0,0x110000,1M,
+ota_1,app,ota_1,0x210000,1M,
+storage,data,spiffs,0x310000,200K,
+*******************************************************************************
+[371/849] Generating C:/Users/mayan/testing/littlefs_provi...aged_components/joltwallet__littlefs/mklittlefs/mklittlefsFAILED: C:/Users/mayan/testing/littlefs_provisioning_example/managed_components/joltwallet__littlefs/mklittlefs/mklittlefs
+cmd.exe /C "cd /D C:\Users\mayan\testing\littlefs_provisioning_example\managed_components\joltwallet__littlefs\mklittlefs && make clean && make dist LFS_NAME_MAX=64"
+fatal: No names found, cannot describe anything.
+fatal: Not a valid object name HEAD
+fatal: Not a valid object name HEAD
+Could Not Find C:\Users\mayan\testing\littlefs_provisioning_example\managed_components\joltwallet__littlefs\mklittlefs\mklittlefs.exe
+Could Not Find C:\Users\mayan\testing\littlefs_provisioning_example\managed_components\joltwallet__littlefs\src\littlefs\lfs.o
+fatal: No names found, cannot describe anything.
+fatal: Not a valid object name HEAD
+fatal: Not a valid object name HEAD
+g++ -std=gnu++11 -Os -Wall   -Itclap -Iinclude -Ilittlefs -I. -I ../src -D VERSION=\"\" -D LITTLEFS_VERSION=\""unknown"\" -D BUILD_CONFIG=\"\" -D BUILD_CONFIG_NAME=\"-generic\" -D __NO_INLINE__ -D LFS_NAME_MAX=64   -c -o main.o main.cpp
+process_begin: CreateProcess(NULL, g++ -std=gnu++11 -Os -Wall -Itclap -Iinclude -Ilittlefs -I. -I ../src -D VERSION=\"\" -D LITTLEFS_VERSION=\"unknown\" -D BUILD_CONFIG=\"\" -D BUILD_CONFIG_NAME=\"-generic\" -D __NO_INLINE__ -D LFS_NAME_MAX=64 -c -o main.o main.cpp, ...) failed.
+make (e=2): The system cannot find the file specified.
+make: *** [<builtin>: main.o] Error 2
+[388/849] Performing configure step for 'bootloader'-- Found Git: C:/Espressif_4.4.3/Espressif/tools/idf-git/2.34.2/cmd/git.exe (found version "2.34.1.windows.1")
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file C:/Users/mayan/testing/littlefs_provisioning_example/sdkconfig
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/soc/esp32/ld/esp32.peripherals.ld
+-- App "bootloader" version: v5.0-dirty
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: C:/Espressif/frameworks/esp-idf-v5.0/components/bootloader C:/Espressif/frameworks/esp-idf-v5.0/components/bootloader_support C:/Espressif/frameworks/esp-idf-v5.0/components/efuse C:/Espressif/frameworks/esp-idf-v5.0/components/esp_app_format C:/Espressif/frameworks/esp-idf-v5.0/components/esp_common C:/Espressif/frameworks/esp-idf-v5.0/components/esp_hw_support C:/Espressif/frameworks/esp-idf-v5.0/components/esp_rom C:/Espressif/frameworks/esp-idf-v5.0/components/esp_system C:/Espressif/frameworks/esp-idf-v5.0/components/esptool_py C:/Espressif/frameworks/esp-idf-v5.0/components/freertos C:/Espressif/frameworks/esp-idf-v5.0/components/hal C:/Espressif/frameworks/esp-idf-v5.0/components/log C:/Espressif/frameworks/esp-idf-v5.0/components/bootloader/subproject/main C:/Espressif/frameworks/esp-idf-v5.0/components/bootloader/subproject/components/micro-ecc C:/Espressif/frameworks/esp-idf-v5.0/components/newlib C:/Espressif/frameworks/esp-idf-v5.0/components/partition_table C:/Espressif/frameworks/esp-idf-v5.0/components/soc C:/Espressif/frameworks/esp-idf-v5.0/components/spi_flash C:/Espressif/frameworks/esp-idf-v5.0/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/mayan/testing/littlefs_provisioning_example/build/bootloader
+ninja: build stopped: subcommand failed.
+ninja failed with exit code 1, output of the command is in the c:\users\mayan\testing\littlefs_provisioning_example\build\log\idf_py_stderr_output_30308 and c:\users\mayan\testing\littlefs_provisioning_example\build\log\idf_py_stdout_output_30308
