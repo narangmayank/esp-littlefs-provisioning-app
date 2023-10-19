@@ -1,1 +1,1 @@
-# littlefs provisioning app
+# littlefs provisioning example app
